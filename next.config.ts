@@ -8,6 +8,15 @@ const nextConfig: NextConfig = {
       { hostname: "t4.ftcdn.net" }, // Added hostname
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/dheik-burguer",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
