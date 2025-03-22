@@ -5,9 +5,8 @@ import { headers } from "next/headers";
 import Stripe from "stripe";
 
 import { db } from "@/lib/prisma";
-
-import { CartProduct } from "../contexts/cart";
-import { removeCpfPunctuation } from "../helpers/cpf";
+import { CartProduct } from "../../contexts/cart";
+import { removeCpfPunctuation } from "../../helpers/cpf";
 
 interface CreateStripeCheckoutInput {
   products: CartProduct[];
